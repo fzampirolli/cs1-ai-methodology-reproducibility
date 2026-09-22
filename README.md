@@ -64,13 +64,14 @@ identifying the authors — see "What is withheld, and why" below.
   against the institution's public class schedule to identify the
   instructor, which would break double-blind review. So
   `dados/serie-historica/pi0505_turmas_2009-2026.csv`'s `turma` column is
-  blank for all 840 classes **except** the three 2026.1 classes the
+  blank for all 840 classes **except** the five 2026.1 classes the
   manuscript's own Table 5 already discusses by number, pseudonymised to
-  match: `B1` (Experiment 2), `C1`/`C2` (Experiment 3). Experiment 1's two
-  classes are not in this institutional table at all — the manuscript
-  sources their numbers from the instructor's own consolidated grade
-  sheet instead (see Table 5's note), so there was nothing to redact or
-  label for them here. `shift` and `campus` were derived from the real
+  match: `A1`/`A2` (Experiment 1), `B1` (Experiment 2), `C1`/`C2`
+  (Experiment 3). This institutional table's own assessed/failed counts
+  for `A1`/`A2` don't exactly match Table 5's — Table 5 sources
+  Experiment 1's numbers from the instructor's own consolidated grade
+  sheet instead (see its note), a different snapshot of the same two
+  classes. `shift` and `campus` were derived from the real
   code *before* it was redacted, so no number in the series changed — only
   the class label was removed. The two scripts that do this redaction
   (`00_serie_historica_extrair.py`, which also holds the 3 real codes as a
