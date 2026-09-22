@@ -14,7 +14,10 @@ identifying the authors — see "What is withheld, and why" below.
   signed-rank tests with Holm correction, rank-biserial effect sizes,
   bootstrap CIs, Mann-Whitney homogeneity checks, Cronbach's alpha, and the
   historical failure-rate series by class shift (weighted binomial GLM,
-  cluster-robust SEs). Figures 3, 4, and 5 are rendered by calling the
+  cluster-robust SEs, Scheirer-Ray-Hare, and the between-class dispersion
+  statistics — σ and range per year/term/shift cell — cited in the
+  Discussion's "Three caveats" and tabulated in Table 7 of Appendix A).
+  Figures 3, 4, and 5 are rendered by calling the
   plotting functions in `03_figuras_en.py` directly, so they are the same
   images published in the manuscript, not simplified stand-ins. Each
   section ends with a note on where that number appears in the manuscript
