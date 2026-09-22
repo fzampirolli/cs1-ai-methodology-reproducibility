@@ -1,0 +1,38 @@
+=== PERCEPÇÃO DISCENTE — PI 2026.1 ===
+
+Exp. 2 (Docente A, diurno):  N = 34
+Exp. 3 (Docente B, noturno): N = 40
+Exp. 2+3 combinados:         N = 74
+Exp. 1 (Docente C, noturno): N = 16  (exploratório)
+
+Normalidade (Shapiro-Wilk p<0,05): 20/20 itens violam
+
+Wilcoxon unicaudal (H1: mediana>3) + Holm: 16/20 itens significativos (p_holm<0,05)
+
+Itens significativos (ordenados por r):
+  Q06: mediana=5  r=+0.98 (grande)  p_holm=0.0000
+  Q14: mediana=4  r=+0.96 (grande)  p_holm=0.0000
+  Q05: mediana=4  r=+0.93 (grande)  p_holm=0.0000
+  Q10: mediana=4  r=+0.90 (grande)  p_holm=0.0000
+  Q08: mediana=4  r=+0.86 (grande)  p_holm=0.0000
+  Q12: mediana=4  r=+0.81 (grande)  p_holm=0.0000
+  Q07: mediana=4  r=+0.79 (grande)  p_holm=0.0000
+  Q18: mediana=5  r=+0.79 (grande)  p_holm=0.0000
+  Q03: mediana=4  r=+0.78 (grande)  p_holm=0.0000
+  Q15: mediana=4  r=+0.71 (grande)  p_holm=0.0000
+  Q04: mediana=4  r=+0.68 (grande)  p_holm=0.0000
+  Q02: mediana=4  r=+0.64 (grande)  p_holm=0.0001
+  Q01: mediana=4  r=+0.54 (grande)  p_holm=0.0016
+  Q11: mediana=4  r=+0.46 (médio)  p_holm=0.0085
+  Q19: mediana=4  r=+0.41 (médio)  p_holm=0.0167
+  Q17: mediana=4  r=+0.37 (médio)  p_holm=0.0325
+
+Itens NÃO significativos após Holm:
+  Q09: mediana=3  r=-0.01  p_holm=1.0000  p_raw=0.5214
+  Q13: mediana=3  r=-0.03  p_holm=1.0000  p_raw=0.5677
+  Q16: mediana=3  r=+0.17  p_holm=0.5994  p_raw=0.1498
+  Q20: mediana=1  r=-0.96  p_holm=1.0000  p_raw=1.0000
+
+Homogeneidade A x B (Mann-Whitney U + Holm): 1/20 itens diferem  -> ATENÇÃO: há diferença
+
+Alfa de Cronbach (Q01-Q17):  A+B=0.890   A=0.883   B=0.906
