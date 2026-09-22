@@ -58,9 +58,10 @@ identifying the authors — see "What is withheld, and why" below.
   in the manuscript itself (Instructor A = Experiment 1, evening;
   Instructor B = Experiment 2, daytime; Instructor C = Experiment 3,
   evening). Nothing in this repository ties that letter to a real name.
-- **2026.1 class codes.** The institutional class code (e.g.
-  `NA1BCM0505-22SB`) is reused every term as a sequential slot number, not
-  a name in itself — but for 2026.1 specifically, it can be cross-checked
+- **2026.1 class codes.** The institutional class code (shift letter +
+  sequence number + curriculum suffix + campus suffix) is reused every
+  term as a sequential slot number, not a name in itself — but for 2026.1
+  specifically, it can be cross-checked
   against the institution's public class schedule to identify the
   instructor, which would break double-blind review. So
   `dados/serie-historica/pi0505_turmas_2009-2026.csv`'s `turma` column is
