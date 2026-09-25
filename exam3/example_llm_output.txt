@@ -1,0 +1,38 @@
+One of the 34 outputs of DeepSeek run 5 (the one sent to students), for a
+Type B question to which the VPL test-case grading gave 0 points.
+The student's code is omitted; everything else is verbatim (Portuguese).
+
+AVALIAÇÃO TIPO B - Q1 (Peso 50 pts)
+
+TIPO B — Notas e Conceitos (Matriz Ampliada)
+-------------------------------
+
+Critério 1 - [5/10 pts]:
+  -  Lê corretamente o número de alunos L e a matriz Lx6 de notas iniciais (5 pts).
+  -  Não cria adequadamente a matriz ampliada Lx9; a saída é impressa durante o processamento
+    sem armazenar a matriz completa (0 pts).
+
+Critério 2 - [15/25 pts]:
+  -  Cálculo da Nota Base N está correto (0.3*P1 + 0.3*P2 + 0.4*P3) (5 pts).
+  -  Cálculo da Pré-REC com bônus (1 + soma_simulados * 0.005) está correto (5 pts).
+  -  Atribuição de conceitos (A, B, C, D, F) está correta (5 pts).
+  -  Há um erro lógico: o laço interno `for i in range(L):` dentro do laço principal está
+    imprimindo dados de todos os alunos repetidamente a cada iteração, e as variáveis `N` e `NF`
+    são usadas incorretamente (são listas, não valores individuais) na formatação (0 pts).
+
+Critério 3 - [5/15 pts]:
+  -  Exibe o cabeçalho da tabela formatado corretamente (5 pts).
+  -  Não calcula nem exibe a média da turma, distribuição de conceitos ou lista de alunos acima
+    da média (0 pts).
+
+NOTA FINAL: 25/50
+
+Comentários para o aluno: Seu código inicia bem, lendo os dados e definindo as fórmulas de
+cálculo. No entanto, a lógica de impressão está confusa: você colocou um laço aninhado
+desnecessário (`for i in range(L)`) dentro do laço principal, o que faz com que a tabela seja
+impressa L vezes (uma para cada aluno processado), e de forma incorreta, pois usa as listas `N`
+e `NF` diretamente na formatação em vez dos elementos `N[l]` e `NF[l]`. Além disso, você não
+implementou as estatísticas finais (média da turma e alunos acima da média). Para corrigir,
+remova o laço interno, imprima linha a linha dentro do laço principal usando os índices
+corretos, armazene os resultados em uma matriz ampliada e, após o laço, calcule as estatísticas
+solicitadas.

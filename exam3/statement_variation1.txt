@@ -1,0 +1,108 @@
+Exam 3, variation 1 of 50 (Portuguese, as printed; header removed).
+Question 1 is of Type A (element-wise matrix operation; the variations change
+the operation and the data); Question 2 is of Type B (grades and letter grades).
+
+Instruções:
+         (a) Deixe seu celular desligado e sobre o computador. É PROIBIDO sair da sala durante a prova. ASSI-
+             NAR a lista de presença mostrando a carteira estudantil ao finalizar.
+         (b) def lerMatriz(L,C):
+                 m = [[0] * C for _ in range(L)]
+                 for l in range(L):
+                    itens_linha = input().split()
+                    for c in range(C):
+                     m[l][c] = int(itens_linha[c])
+                 return m
+
+                def imprimirMatriz(m):
+                    for l in range(len(m)):
+                      for c in range(len(m[0])):
+                         print(m[l][c], end=" ")
+                      print()
+
+       Questões Dissertativas                                                                           #v1
+1. Implemente um programa que leia duas matrizes de inteiros A e B, ambas de dimensão L × C lidas com
+       int(input()), e calcule A ∗ B, elemento a elemento das matrizes.
+       Entrada: Primeiro o número de linhas L e colunas C, depois as linhas de A e em seguida as linhas de B (valores
+       separados por espaço).
+       Entrada de Dados:
+       3
+       4
+       4 1 0 0
+       3 2 2 0
+       0 2 2 2
+       0 0 4 4
+       4 3 0 3
+       0 1 3 0
+
+       Saı́da:
+       A:
+       4 1 0 0
+       3 2 2 0
+       0 2 2 2
+       B:
+       0 0 4 4
+       4 3 0 3
+       0 1 3 0
+
+       A*B:
+       0 0 0 0
+       12 6 0 0
+       0 2 6 0
+
+          
+
+2. O professor de Programação quer automatizar o cálculo das notas finais da turma. Implemente um programa
+        que leia a quantidade de alunos L e, em seguida, uma matriz L × 6 contendo as notas das três provas presenciais
+        (P1, P2 e P3) e dos três simulados (S1, S2 e S3). O programa deve calcular a Nota Base (N = ponderada
+        pelas provas) e aplicar o bônus proporcional dos simulados para chegar à Pré-REC de cada aluno. Você deve
+        gerar uma matriz ampliada para incluir as colunas de N , Pré-REC e o Conceito. Cada simulado (nota de 0 a 10)
+        acrescenta até 5% de bônus sobre a N (totalizando no máximo 15% de bônus).
+       Fórmula:
+                           Pré-REC = (P 1 × 0,3 + P 2 × 0,3 + P 3 × 0,4) × (1 + (S1 + S2 + S3) × 0,005)
+       Conceitos: A (≥ 8,5) B (≥ 7,0) C (≥ 6,0) D (≥ 5,0) F (< 5,0)
+       Veja como formatar o cabeçalho:
+       print(f"{'Aluno':<5} {'P1':>5} {'P2':>5} {'P3':>5} {'S1':>5} {'S2':>5} {'S3':>5} {'N':>8} {'Pré-REC':>8} {'Conc':>5}")
+       print("-----------------------------------------------------------------")
+       ...
+       # v=m[i] é o conjunto de notas do aluno i
+       print( f"{str(i):<5} {v[0]:>5.1f} {v[1]:>5.1f} {v[2]:>5.1f} {v[3]:>5.1f} {v[4]:>5.1f} {v[5]:>5.1f}", end=" ")
+       print( f"{N:>8.2f} {NF:>8.2f} {c:>5}")
+       ...
+
+
+       Entrada de Dados:
+       8
+       3.7 7.1 7.7 5.5 9.0 3.1
+       9.0 7.6 9.0 3.4 4.6 9.0
+       9.0 8.0 9.0 4.0 4.1 6.9
+       7.7 8.8 9.0 9.0 9.0 3.4
+       7.6 7.9 8.3 6.7 8.6 8.4
+       8.9 6.0 5.5 9.0 4.3 3.8
+       8.4 7.8 5.2 5.2 5.8 8.4
+       5.8 9.0 5.9 4.6 7.6 6.9
+
+       Saı́da:
+       Aluno    P1    P2    P3    S1    S2    S3        N Pré-REC Conc
+       -----------------------------------------------------------------
+       1       3.7   7.1   7.7   5.5   9.0   3.1     6.32     6.88     C
+       2       9.0   7.6   9.0   3.4   4.6   9.0     8.58     9.31     A
+       3       9.0   8.0   9.0   4.0   4.1   6.9     8.70     9.35     A
+       4       7.7   8.8   9.0   9.0   9.0   3.4     8.55     9.46     A
+       5       7.6   7.9   8.3   6.7   8.6   8.4     7.97     8.91     A
+       6       8.9   6.0   5.5   9.0   4.3   3.8     6.67     7.24     B
+       7       8.4   7.8   5.2   5.2   5.8   8.4     6.94     7.61     B
+       8       5.8   9.0   5.9   4.6   7.6   6.9     6.80     7.45     B
+       -----------------------------------------------------------------
+       Média                                                 8.28
+
+       Distribuiç~
+                  ao de conceitos:
+         A: 4 aluno(s)
+         B: 3 aluno(s)
+         C: 1 aluno(s)
+
+       Alunos acima da média da turma (8.28):
+         2: 9.31
+         3: 9.35
+         4: 9.46
+         5: 8.91
