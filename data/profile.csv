@@ -1,0 +1,70 @@
+group,answered_class,works,study_hours_per_day,languages_used,entry_programme,entry_year
+analysed,True,no,more than 4,"Python, CPP (C++)",science_and_technology,2025
+analysed,True,no,4,"Java, JavaScript, Python",science_and_technology,2025
+analysed,True,no,more than 4,"Java, Python, C",science_and_technology,2023
+analysed,True,no,more than 4,"JavaScript, Python",science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,2,"Python, C, CPP (C++), R",science_and_technology,2025
+analysed,True,no,more than 4,"Java, JavaScript, Python, R",science_and_technology,2024
+analysed,True,no,4,Python,science_and_technology,2025
+analysed,True,no,3,Python,science_and_technology,2025
+analysed,True,no,2,Python,science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,more than 4,"Python, C",science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,3,"Java, JavaScript, Python, HTML,CSS,SQL,PHP",science_and_technology,2025
+analysed,True,no,4,Python,science_and_technology,2025
+analysed,True,no,more than 4,"Python, C, CPP (C++)",science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,3,Python,science_and_technology,2025
+analysed,True,no,3,"Java, Python, C, CPP (C++)",science_and_technology,2025
+analysed,True,no,2,Python,science_and_technology,2025
+analysed,True,no,3,Python,science_and_technology,2025
+analysed,True,no,2,Python,science_and_technology,2025
+analysed,True,no,more than 4,"JavaScript, Python, C#, TypeScript",science_and_technology,2025
+analysed,True,no,2,"Java, Python, CPP (C++), R",science_and_technology,2025
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,4,Python,science_and_technology,2025
+analysed,True,no,more than 4,"JavaScript, Python, CPP (C++), C#, PHP, RUBY",science_and_technology,2025
+analysed,True,no,2,Python,science_and_technology,2023
+analysed,True,no,more than 4,Python,science_and_technology,2025
+analysed,True,yes,2,Python,science_and_technology,2025
+analysed,True,no,3,Python,science_and_technology,2025
+analysed,True,no,4,Python,science_and_technology,2025
+analysed,True,no,3,Python,science_and_technology,2024
+analysed,True,no,3,Python,science_and_technology,2025
+analysed,True,yes,4,"Java, JavaScript, Python, C, php, html, css, mysql",science_and_technology,2025
+analysed,True,no,3,"JavaScript, Python",science_and_technology,2025
+analysed,False,,nan,,,
+analysed,False,7,nan,,Python,
+analysed,False,0.1842105263,nan,,Java,
+analysed,False,,nan,,JavaScript,
+evening_campus1,True,yes,3,"Java, Python",science_and_technology,2025
+evening_campus1,True,yes,3,"Java, Python, Html",science_and_technology,2025
+evening_campus1,True,yes,2,"Java, Python",science_and_technology,2025
+evening_campus1,True,yes,more than 4,"Python, CPP (C++)",science_and_technology,2024
+evening_campus1,True,yes,2,"Python, C",science_and_technology,2024
+evening_campus1,True,yes,2,"JavaScript, Python, R",science_and_technology,2023
+evening_campus1,True,no,more than 4,"Java, Python",science_and_technology,2025
+evening_campus1,True,no,more than 4,"Java, Python, C++",science_and_technology,2025
+evening_campus1,True,no,more than 4,"Java, Python",science_and_technology,2025
+evening_campus1,True,no,more than 4,"Python, R",science_and_technology,2025
+evening_campus1,True,yes,4,Python,science_and_technology,2025
+evening_campus1,True,yes,4,"JavaScript, Python",science_and_technology,2025
+evening_campus1,True,yes,1,"Java, Python, CPP (C++)",science_and_technology,2025
+evening_campus1,True,yes,1,Nunca utilizei,science_and_technology,2025
+evening_campus1,True,yes,more than 4,"JavaScript, Python",science_and_technology,2025
+evening_campus1,True,yes,1,Nunca utilizei,science_and_technology,2025
+evening_campus1,True,yes,1,C,science_and_technology,2022
+evening_campus1,True,yes,2,Python,science_and_technology,2024
+evening_campus1,True,yes,1,"Java, Python",science_and_technology,2025
+evening_campus1,True,yes,3,Python,science_and_technology,2025
+evening_campus1,True,no,more than 4,C,science_and_technology,2024
+evening_campus1,True,yes,2,"Python, Matlab",science_and_technology,2024
+evening_campus1,True,no,2,"Python, R",science_and_technology,2024
+evening_campus1,True,yes,3,Python,science_and_technology,2022
+evening_campus1,True,yes,1,"Java, Python, C, C++",science_and_technology,2024
+evening_campus1,True,yes,1,Python,science_and_technology,2022
+evening_campus1,True,yes,4,"Java, Python, C, CPP (C++)",science_and_technology,2025
+evening_campus1,True,yes,1,"Java, JavaScript, Python, C, CPP (C++), C# e PHP ",science_and_technology,2025
