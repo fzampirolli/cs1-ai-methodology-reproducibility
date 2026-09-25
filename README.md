@@ -41,9 +41,10 @@ pip install numpy pandas scipy statsmodels matplotlib jupyter
 jupyter nbconvert --to notebook --execute calculations.ipynb --output out.ipynb
 ```
 
-or open it in Colab with the badge above. Tested with Python 3.10, numpy
-2.2, pandas 2.3, scipy 1.15, statsmodels 0.15 and matplotlib 3.10. The
-notebook reads only `data/`, so it runs anywhere.
+or open it in Colab with the badge above: when `data/` is not next to the
+notebook, the first cell downloads the CSVs from this repository. Tested
+with Python 3.10 (numpy 2.2, scipy 1.15, pandas 2.3) and Python 3.12 (numpy
+2.5, scipy 1.18, pandas 3.0), statsmodels 0.15; all checks pass in both.
 
 Bootstrap intervals and the power simulation use a single seeded random
 generator consumed in a fixed order; run the cells top to bottom to get the
