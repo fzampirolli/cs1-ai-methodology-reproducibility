@@ -12,9 +12,9 @@ automated and LLM-proposed grading).
 
 | path | what it is |
 |---|---|
-| `calculations.ipynb` | the notebook, in English, already executed. It walks from the files in `data/` to each published result. Every result is followed by `check(...)`, which compares it with the value printed in the manuscript and stops if they differ; all 205 checks pass. Each part ends with a note on where the numbers appear in the manuscript. |
-| `data/perception.csv` | 20-item Likert questionnaire (1–5), anonymous. `group = analysed` (the class studied, N = 34) or `comparison` (two classes of another campus that used the same material with a different assessment design, N = 40). Q01–Q17 substantive, Q18–Q20 validity checks. |
-| `data/profile.csv` | profile questionnaire, anonymous: work status, daily hours available for study, programming languages used before, entry programme and year. `group = analysed` or `evening_campus1` (two evening classes of the same campus, used only for the work/study-time proportions). |
+| `calculations.ipynb` | the notebook, in English, already executed. It walks from the files in `data/` to each published result. Every result is followed by `check(...)`, which compares it with the value printed in the manuscript and stops if they differ; all 197 checks pass. Each part ends with a note on where the numbers appear in the manuscript. |
+| `data/perception.csv` | 20-item Likert questionnaire (1–5), voluntary; identification was optional and was removed before release. `group = analysed` (the class studied, N = 34) or `comparison` (two classes of another campus that used the same material with a different assessment design, N = 40). Q01–Q17 substantive, Q18–Q20 validity checks. |
+| `data/profile.csv` | profile questionnaire (optional identification, removed): work status, daily hours available for study, programming languages used before, entry programme and year. `group = analysed` or `evening_campus1` (two evening classes of the same campus, used only for the work/study-time proportions). |
 | `data/exams.csv` | exam and mock-exam scores (0–100) of the analysed class, one row per student, random IDs `E01…E41`. Columns: `p*_vpl` automatic VPL grade (proportional to the test cases passed); `p1_vpl_reviewed` Exam 1 grade after the instructor's review inside the VPL; `p2_deepseek`, `p3_deepseek_run1…5`, `p3_gemini` LLM-proposed grades (run 5 was sent to students); `p*_final` final grade in the gradebook; `p3_instructor_sheet` the instructor's working column; `mock1…3` mock exams (empty = not taken); `p1_submissions`; `past_exams_practice`. |
 | `data/exam1_llm_models.csv` | Exam 1 only: how many graded questions each Groq model handled (the grading tool tried a fixed list of models and fell back to the next when one failed, e.g. at the free plan's rate limit) — counts only. |
 | `data/llm_usage.csv` | the LLM provider's usage export (tokens, requests, month-to-date cost) right before and after grading runs 4 and 5; account and key identifiers removed. |
@@ -26,7 +26,8 @@ automated and LLM-proposed grading).
 - **No direct identifiers.** Names, e-mails, logins, enrolment numbers,
   submitted code, timestamps and free-text answers are not in any file. The
   notebook's first cell also asserts that no such column is present.
-- **Questionnaires** were anonymous at collection; the two instruments
+- **Questionnaires** had optional identification (a few students gave an
+  e-mail or name), removed before release; the two instruments
   cannot be linked to each other or to exam scores.
 - **Exam scores** are keyed by an ID drawn at random when the file was
   built; the order of the rows does not follow the class list, and the key
